@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h1> <center>Option Value Calculation Using Black-Scholes Formula </center> </h1>
+
+<form action = 'est'>
+    Current Price : <input type = 'text' name = 'spot_price'><br><br>
+    Strike Price : <input type = 'text' name = 'strike_price'> <br> <br>
+    Risk free rate of interest : <input type = 'text' name = 'rate'> <br> <br>
+    Volatility : <input type = 'text' name = 'vol'> <br> <br>
+    Time to expiry : <input type = 'text' name = 'expiry'> <br> <br>
+    <input type = 'submit'>
+</form>
+
+{% endblock %}
